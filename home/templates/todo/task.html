@@ -1,0 +1,94 @@
+<style>
+    body {
+        background: #f5d9b2;
+        font-family: Arial;
+    }
+
+    .box {
+        width: 350px;
+        background: #201c1c;
+        color: white;
+        padding: 20px;
+        margin: 60px auto;
+        border-radius: 12px;
+        border: 3px solid #1a73e8;
+    }
+
+    input {
+        width: 220px;
+        padding: 8px;
+        border-radius: 6px;
+        border: none;
+    }
+
+    button {
+        background: #1a73e8;
+        color: white;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .task {
+        background: #302c2c;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .links a {
+        color: red;
+        margin-left: 10px;
+        text-decoration: none;
+    }
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task List</title>
+    <!-- paste style here -->
+</head>
+<body>
+
+<div class="box">
+    <h2>To Do List</h2>
+
+    <div>
+        <input type="text" placeholder="Enter task">
+        <button>Add</button>
+    </div>
+
+    <h3>Task List</h3>
+
+    <div class="task">
+        <span><input type="checkbox"> wash dishes</span>
+        <span class="links">
+            <a href="delete_task.html">Delete</a>
+            <a href="update_task.html">Edit</a>
+        </span>
+    </div>
+
+    <div class="task">
+        <span><input type="checkbox" checked> edit resume</span>
+        <span class="links">
+            <a href="delete_task.html">Delete</a>
+            <a href="update_task.html">Edit</a>
+        </span>
+    </div>
+
+    <div class="task">
+        <span><input type="checkbox"> finish codedex course</span>
+        <span class="links">
+            <a href="delete_task.html">Delete</a>
+            <a href="update_task.html">Edit</a>
+        </span>
+    </div>
+
+    <p style="margin-top:20px;">Completed: 1 | Uncompleted: 2</p>
+</div>
+
+</body>
+</html>

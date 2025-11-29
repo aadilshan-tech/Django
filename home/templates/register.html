@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <style>
+        .div1{
+            width: 1000px; height: 30px;
+        }
+        .div2{
+            margin-left: 250px;
+        }
+        body{
+            background-color: rgb(173, 229, 229);
+        }
+        .div3{
+            width:1000px; height:90px;
+        }
+    </style>
+</head>
+<body>
+    <form action="regist/" method="post">
+        {% csrf_token %}
+    <h1 style="text-align: center;">
+        Student Registration Form
+    </h1>
+    <hr style="margin-left: 100px;" width="1300px">
+    <div style="margin: left 1000px; width: 1300px;">
+
+        <div>
+            <div style="margin-top: 80px; margin-left: 250px;">
+                <label for="">Firstname:</label>
+                <br>
+                <input type="text" name="Fname" id="" class="div1" placeholder="Firstname">
+            </div>
+            <br>
+            <div style="margin-left: 250px;">
+                <label for="">Middle :</label>
+                <br>
+                <input type="text" name="Mname" id="" class="div1" placeholder="Middlename">
+            </div>
+            <br>
+            <div style="margin-left: 250px;">
+                <label for="">Lastname:</label>
+                <br>
+                <input type="text" placeholder="Lastname" class="div1" name="Lname">
+            </div>
+            <br>
+            <br>
+            <div class="div2">
+                <label for="course">
+                    course:
+                </label>
+               
+
+                <select name="course" id="course" >
+                    <option value="" disabled selected>choose a course</option>
+                    <option value="math">mathematics</option>
+                    <option value="science">science</option>
+                    <option value="History">History</option>
+                    <option value="Art">art</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            
+            <div class="div2">
+                <label for="">Gender: </label>
+                <br>
+                
+                <label><input type="radio" value="male" name="gender" checked >Male</label>
+                <label><input type="radio" value="female" name="gender">Female</label>
+                <label><input type="radio" value="other" name="gender">Other</label>
+
+            </div>
+            <br>
+            <br>
+
+            <div class="div2">
+                <label for="phone">Phone:</label><br>
+                <input type="text" placeholder="Phone Number" class="div1" name="phone">
+            </div><br><br>
+           
+            <div class="div2">
+                <label for="email">Email:</label><br>
+                <input type="email" placeholder="Enter email" class="div1" name="email">
+            </div><br><br>
+
+            <div class="div2">
+                <label for="address">Current address</label><br>
+               <textarea name="address" id="" rows="7" cols="135"></textarea>
+            </div>
+            <div class="div2">
+                <button style="margin-left: 3.5px; width: 1000px; height: 30px; background-color: green; color: gainsboro;font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Register</button>
+            </div>
+
+        </div>
+
+
+        <!-- <table  style="margin-top: 80px; margin-left: 200px;">
+            
+                 <tr>
+                    <td>Firstname:
+                    </td>
+                                
+                </tr>
+                <tr >
+                    <td>
+                        <input type="text" placeholder="Firstname" style="width: 1000px; height: 30px;">
+                    </td>
+                </tr>
+            
+            
+            
+                <tr>
+                    <td>
+                        Middlename:
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" placeholder="Secondname" style="width: 1000px; height: 30px;">
+                    </td>
+                </tr>
+
+           
+          
+            <div>
+                <tr>
+                    <td>
+                        Lastname:
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="text" placeholder="Lastname" style="width: 1000px; height: 30px;"></td>
+                </tr>
+            </div>
+
+        </table> -->
+    </div>
+ </form>
+    
+</body>
+</html>
